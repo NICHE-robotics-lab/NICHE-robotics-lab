@@ -1,5 +1,3 @@
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I’m Karishma Patnaik — an applied control researcher who designs robotic systems that don’t shy away from the world, but make purposeful contact with it. My work thrives at the intersection of planning, dynamics, and control, especially in hybrid, contact-rich environments where interaction isn’t noise — it’s the signal.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I also teach and mentor with the same philosophy: structure matters, clarity matters, and students do their best when they're trusted with hard problems. Whether it's in the classroom, the lab, or a high school workshop, I show up to build systems — and people — that hold up under real-world conditions.

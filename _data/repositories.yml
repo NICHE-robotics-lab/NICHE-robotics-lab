@@ -6,3 +6,8 @@ repo_description_lines_max: 4
 
 github_repos:
   - karishmapatnaik/ur_asu
+  - karishmapatnaik/onrobot_ros
+  - karishmapatnaik/vention_ros
+  - karishmapatnaik/gripper_control
+  - karishmapatnaik/px4_vrpn
+  

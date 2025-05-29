@@ -1,33 +1,72 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: "Fourier Birds: Drawing a Hummingbird with Harmonics"
+date: 2025-05-25 10:30:00 -0700
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+Sometimes art and engineering meet — and when they do, Fourier harmonics can help us draw elegant curves from complex shapes. In this tutorial, we’ll reconstruct a hummingbird from its image silhouette using the **Fourier descriptor method**.
+
+### Step-by-step
+
+We start by:
+- Converting the image to a binary silhouette
+- Extracting the largest contour (the bird)
+- Uniformly sampling boundary points
+- Applying a Fourier Transform and filtering to smooth it
+- Reconstructing the shape with limited harmonics
+
+Let’s dive in.
 
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+### Python code
 
-#### Hipster list
+```python
+import cv2
+import numpy as np
+import matplotlib.pyplot as plt
 
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
+# Step 1: Load and preprocess the image
+img = cv2.imread('humming2.jpg')
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+_, bw = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+bw = cv2.bitwise_not(bw)
 
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
+# Step 2: Find largest contour
+contours, _ = cv2.findContours(bw, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+contour = max(contours, key=cv2.contourArea)
+pts = contour[:, 0, :]
+x, y = pts[:, 0], pts[:, 1]
+z = x + 1j * y
 
----
+# Step 3: Resample uniformly
+n = 3000
+t = np.linspace(0, 1, len(z))
+tq = np.linspace(0, 1, n)
+z_uniform = np.interp(tq, t, z.real) + 1j * np.interp(tq, t, z.imag)
 
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
+# Step 4: Apply Fourier transform and keep a few harmonics
+Z = np.fft.fft(z_uniform)
+m = 50
+Z_filtered = np.zeros_like(Z)
+Z_filtered[:m] = Z[:m]
+Z_filtered[-m:] = Z[-m:]
+z_smooth = np.fft.ifft(Z_filtered)
 
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
+# Step 5: Plot
+plt.figure(figsize=(6, 6))
+plt.plot(z_smooth.real - np.mean(z_smooth.real),
+         -(z_smooth.imag - np.mean(z_smooth.imag)),
+         color='firebrick', linewidth=2)
+plt.axhline(0, color='gray', linestyle='--')
+plt.axvline(0, color='gray', linestyle='--')
+plt.text(10, 0, "x-axis", verticalalignment='bottom')
+plt.text(0, 10, "y-axis", horizontalalignment='left')
+plt.title("Hummingbird Reconstructed with Fourier Harmonics")
+plt.axis('equal')
+plt.axis('off')
+plt.show()
 
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+```

@@ -6,8 +6,8 @@ nav: false
 collection: books
 ---
 
-> What an astonishing thing a book is. It's a flat object made from a tree with flexible parts on which are imprinted lots of funny dark squiggles. But one glance at it and you're inside the mind of another person, maybe somebody dead for thousands of years. Across the millennia, an author is speaking clearly and silently inside your head, directly to you. Writing is perhaps the greatest of human inventions, binding together people who never knew each other, citizens of distant epochs. Books break the shackles of time. A book is proof that humans are capable of working magic.
->
-> -- Carl Sagan, Cosmos, Part 11: The Persistence of Memory (1980)
+> Books are time machines made of paper—silent, unassuming, yet brimming with voices. As I read, I find myself in dialogue with minds from different centuries, wrestling with evolution, governance, and justice. Whether unpacking the layered history in India After Gandhi or experiencing the surreal beauty of Story of Your Life and Others, I read not just to escape—but to uncover.
+> As Jung said, “Until you make the unconscious conscious, it will direct your life and you will call it fate.” Reading helps me confront that unconscious, question assumptions, and trace the invisible threads between history, science, and self.
+> Books break the shackles of time. And sometimes, they break the shackles of who we think we are. 
 
 ## Books that I am reading, have read, or will read

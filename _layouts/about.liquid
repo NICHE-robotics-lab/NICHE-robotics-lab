@@ -40,6 +40,14 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Project list -->
+    {% if page.project_list and page.project_list.enabled %}
+      <h2>
+        <a href="{{ '/project_list/' | relative_url }}" style="color: inherit">ongoing projects</a>
+      </h2>
+      {% include project_list.liquid limit=true %}
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
