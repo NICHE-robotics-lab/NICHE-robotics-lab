@@ -1,0 +1,3 @@
+I’m Karishma Patnaik — an applied control researcher who designs robotic systems that don’t shy away from the world, but make purposeful contact with it. My work thrives at the intersection of planning, dynamics, and control, especially in hybrid, contact-rich environments where interaction isn’t noise — it’s the signal.
+
+I also teach and mentor with the same philosophy: structure matters, clarity matters, and students do their best when they're trusted with hard problems. Whether it's in the classroom, the lab, or a high school workshop, I show up to build systems — and people — that hold up under real-world conditions.
