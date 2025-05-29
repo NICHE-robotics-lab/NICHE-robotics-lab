@@ -17,8 +17,8 @@ keywords: aerial robotics, contact-rich task planning, optimization, control # a
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: niche_logo.jpg # add lab logo here! the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://karishmapatnaik.github.io # the base hostname & protocol for your site
-baseurl: /niche-lab # the subpath of your site, e.g. /blog/. Leave blank for root
+url: https://NICHE-robotics.github.io # the base hostname & protocol for your site
+baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
