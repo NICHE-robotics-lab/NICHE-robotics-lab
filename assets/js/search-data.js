@@ -404,68 +404,41 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/fukuyama.html";
-            },},{id: "news-dr-patnaik-was-a-guest-speaker-at-semiconductor-adventure-day-organized-by-asu-preparatory-academy-grinning",
+            },},{id: "news-fourier-birds-drawing-a-hummingbird-with-harmonics",
+          title: 'Fourier Birds: Drawing a Hummingbird with Harmonics',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_4.html";
+            },},{id: "news-dr-patnaik-s-received-the-outstanding-postdoctoral-scholar-recognition-from-the-asu-faculty-women-of-color-caucus-sparkles",
+          title: 'Dr. Patnaik’s received the Outstanding Postdoctoral Scholar recognition from the ASU Faculty Women...',
+          description: "",
+          section: "News",},{id: "news-dr-patnaik-was-a-guest-speaker-at-semiconductor-adventure-day-organized-by-asu-preparatory-academy-grinning",
           title: 'Dr. Patnaik was a Guest Speaker at Semiconductor Adventure Day organized by ASU...',
           description: "",
           section: "News",},{id: "news-dr-patnaik-s-paper-on-xplorer-has-been-accepted-for-publication-in-ieee-asme-transactions-on-mechatronics-sparkles",
           title: 'Dr. Patnaik’s paper on XPLORER has been accepted for publication in IEEE/ASME Transactions...',
           description: "",
-          section: "News",},{id: "news-fourier-birds-drawing-a-hummingbird-with-harmonics",
-          title: 'Fourier Birds: Drawing a Hummingbird with Harmonics',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2.html";
-            },},{id: "project_list-flexman-an-autonomous-robotic-manipulator-with-reasoning",
+          section: "News",},{id: "project_list-flexman-an-autonomous-robotic-manipulator-with-reasoning",
           title: 'FlexMan: An autonomous robotic manipulator with reasoning',
           description: "",
           section: "Project_list",},{id: "project_list-contact-inspection-with-aerial-manipulators",
           title: 'Contact inspection with aerial manipulators',
           description: "",
-          section: "Project_list",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "Project_list",},{id: "projects-squeeze",
+          title: 'SQUEEZE',
+          description: "a deformable aerial robot to &quot;squeeze-and-fly&quot;",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-sobar",
+          title: 'SOBAR',
+          description: "a soft aerial robot for &quot;impact-based fast perching&quot;",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project.html";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-xplorer",
+          title: 'XPLORER',
+          description: "a deformable aerial robot for &quot;tactile-based exploration, mapping and navigation&quot;",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project.html";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project.html";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project.html";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project.html";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project.html";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project.html";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project.html";
             },},{
         id: 'social-email',
         title: 'email',
