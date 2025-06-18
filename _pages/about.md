@@ -4,7 +4,7 @@ title: about
 permalink: /
 subtitle: >
   <span style="color:#b509ac; font-weight:bold;">Nature-Inspired Control of Hybrid Environment Robotic Systems </span> <br>
-  <span style="color:#b509ac">University of Michigan - Dearborn </span> <br>
+  <span style="color:#b509ac">University of Michigan-Dearborn </span> <br>
 
 # Applied Control &#124; Contact-Rich Robotics
 
